@@ -1,23 +1,15 @@
 [submodule "plugins/mklauber/math.js"]
 	path = plugins/mklauber/math.js
 	url = https://github.com/mklauber/tiddly-calc.git
-	branch = master
-[submodule "plugins/mklauber/substory"]
-	path = plugins/mklauber/substory
-	url = https://github.com/mklauber/tiddly-substory.git
-	branch = master
 [submodule "plugins/mklauber/tiddly-field-editor"]
 	path = plugins/mklauber/tiddly-field-editor
 	url = https://github.com/mklauber/tiddly-field-editor.git
-	branch = master
 [submodule "plugins/mklauber/tiddly-preferences"]
 	path = plugins/mklauber/tiddly-preferences
 	url = https://github.com/mklauber/tiddly-preferences.git
-	branch = master
 [submodule "plugins/mklauber/tiddly-shuffle"]
 	path = plugins/mklauber/tiddly-shuffle
 	url = https://github.com/mklauber/tiddly-shuffle.git
-	branch = master
 [submodule "plugins/mklauber/tiddly-dropaction"]
 	path = plugins/mklauber/tiddly-dropaction
 	url = https://github.com/mklauber/tiddly-dropaction

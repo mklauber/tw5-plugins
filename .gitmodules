@@ -13,3 +13,7 @@
 [submodule "plugins/mklauber/tiddly-dropaction"]
 	path = plugins/mklauber/tiddly-dropaction
 	url = https://github.com/mklauber/tiddly-dropaction
+[submodule "plugins/mklauber/aliases"]
+	path = plugins/mklauber/aliases
+	url = https://github.com/mklauber/tiddly-aliases.git
+	branch = master

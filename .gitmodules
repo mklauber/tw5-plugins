@@ -19,4 +19,4 @@
 	branch = master
 [submodule "plugins/mklauber/substory"]
 	path = plugins/mklauber/substory
-	url = git@github.com:mklauber/tiddly-substory.git
+	url = https://github.com/mklauber/tiddly-substory.git

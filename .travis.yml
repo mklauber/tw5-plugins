@@ -11,6 +11,8 @@ script:
   - ./node_modules/.bin/tiddlywiki . --output output --build gui
 
 deploy:
+  edge:
+    branch: v1.8.47
   provider: pages
   local-dir: output
   skip-cleanup: true

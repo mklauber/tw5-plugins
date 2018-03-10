@@ -7,8 +7,6 @@ This plugin allows you to setup tiddlers with aliases that can also be links to 
 
 This could be useful for situations where you want multiple terms to refer to the same thing, such as when a character has multiple names.
 
-To use this plugin drag the following link:  [[$:/plugins/mklauber/aliases]]
-
 !!Examples:
 
 Link to alias referring to a single tiddler: [[Mr. Lucas]]

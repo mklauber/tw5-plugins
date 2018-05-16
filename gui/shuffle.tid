@@ -1,4 +1,6 @@
 title: Shuffle Operator
 tags: Plugin
 
+Copy this link to add the plugin library [[Matt's Plugin Library]] or Import it directly by dragging this link. [[$:/plugins/mklauber/shuffle]]
+
 <$transclude tiddler="$:/plugins/mklauber/shuffle/readme" />

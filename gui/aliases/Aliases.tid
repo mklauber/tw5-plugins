@@ -3,6 +3,8 @@ modified: 20180310042357345
 title: Aliases
 tags: Plugin
 
+Copy this link to add the plugin library:  [[Matt's Plugin Library]] or import it directly here [[$:/plugins/mklauber/aliases]].
+
 This plugin allows you to setup tiddlers with aliases that can also be links to that tiddler.
 
 This could be useful for situations where you want multiple terms to refer to the same thing, such as when a character has multiple names.

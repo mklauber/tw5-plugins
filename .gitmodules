@@ -26,9 +26,6 @@
 	path = plugins/mklauber/substory
 	url = https://github.com/mklauber/tiddly-substory.git
 	branch = master
-[submodule "plugins/mklauber/SoundPad-Sounds"]
-	path = plugins/mklauber/SoundPad-Sounds
-	url = https://github.com/mklauber/tw5-SoundPad-Sounds.git
 [submodule "plugins/mklauber/SoundPad"]
 	path = plugins/mklauber/SoundPad
 	url = https://github.com/mklauber/tw5-SoundPad.git

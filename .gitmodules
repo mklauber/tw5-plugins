@@ -32,3 +32,15 @@
 [submodule "plugins/mklauber/SoundPad"]
 	path = plugins/mklauber/SoundPad
 	url = https://github.com/mklauber/tw5-SoundPad.git
+[submodule "plugins/DMTools/5e-Monsters"]
+	path = plugins/DMTools/5e-Monsters
+	url = https://github.com/mklauber/tw-5eSRD-Monsters.git
+	branch = master
+[submodule "plugins/DMTools/CreatureManager"]
+	path = plugins/DMTools/CreatureManager
+	url = https://github.com/mklauber/tw-CreatureManager.git
+	branch = master
+[submodule "plugins/DMTools/5e-Spells"]
+	path = plugins/DMTools/5e-Spells
+	url = https://github.com/mklauber/tw-5eSRD-Spells.git
+	branch = master

@@ -41,3 +41,7 @@
 	path = plugins/DMTools/5e-Spells
 	url = https://github.com/mklauber/tw-5eSRD-Spells.git
 	branch = master
+[submodule "plugins/DMTools/tw-npc-name-gnerator"]
+	path = plugins/DMTools/tw-npc-name-gnerator
+	url = https://github.com/mklauber/tw-npc-name-gnerator.git
+	branch = master

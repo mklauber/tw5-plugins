@@ -45,3 +45,6 @@
 	path = plugins/DMTools/tw-npc-name-gnerator
 	url = https://github.com/mklauber/tw-npc-name-gnerator.git
 	branch = master
+[submodule "plugins/DMTools/EncounterBuilder"]
+	path = plugins/DMTools/EncounterBuilder
+	url = https://github.com/mklauber/tw5-encounter-builder.git

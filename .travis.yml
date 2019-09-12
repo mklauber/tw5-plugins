@@ -6,8 +6,7 @@ before_install:
 install: true
 
 script:
-  - cp -r plugins/DMTools/* node_modules/tiddlywiki/plugins/
-  - cp -r plugins/mklauber/* node_modules/tiddlywiki/plugins/
+  - cp -r plugins/* node_modules/tiddlywiki/plugins/
   - ./node_modules/.bin/tiddlywiki . --output output/library --build library
   - cp output/library/recipes/library/tiddlers/* gui/
   - ./node_modules/.bin/tiddlywiki . --output output --build gui

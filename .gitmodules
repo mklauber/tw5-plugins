@@ -1,46 +1,46 @@
 [submodule "plugins/mklauber/math.js"]
-	path = plugins/mklauber/math.js
+	path = plugins/math.js
 	url = https://github.com/mklauber/tiddly-calc.git
 	branch = master
 [submodule "plugins/mklauber/tiddly-preferences"]
-	path = plugins/mklauber/tiddly-preferences
+	path = plugins/tiddly-preferences
 	url = https://github.com/mklauber/tiddly-preferences.git
 	branch = master
 [submodule "plugins/mklauber/tiddly-shuffle"]
-	path = plugins/mklauber/tiddly-shuffle
+	path = plugins/tiddly-shuffle
 	url = https://github.com/mklauber/tiddly-shuffle.git
 	branch = master
 [submodule "plugins/mklauber/tiddly-dropaction"]
-	path = plugins/mklauber/tiddly-dropaction
+	path = plugins/tiddly-dropaction
 	url = https://github.com/mklauber/tiddly-dropaction
 	branch = master
 [submodule "plugins/mklauber/aliases"]
-	path = plugins/mklauber/aliases
+	path = plugins/aliases
 	url = https://github.com/mklauber/tiddly-aliases.git
 	branch = master
 [submodule "plugins/mklauber/substory"]
-	path = plugins/mklauber/substory
+	path = plugins/substory
 	url = https://github.com/mklauber/tiddly-substory.git
 	branch = master
 [submodule "plugins/mklauber/SoundPad"]
-	path = plugins/mklauber/SoundPad
+	path = plugins/SoundPad
 	url = https://github.com/mklauber/tw5-SoundPad.git
 [submodule "plugins/DMTools/5e-Monsters"]
-	path = plugins/DMTools/5e-Monsters
+	path = plugins/5e-Monsters
 	url = https://github.com/mklauber/tw-5eSRD-Monsters.git
 	branch = master
 [submodule "plugins/DMTools/CreatureManager"]
-	path = plugins/DMTools/CreatureManager
+	path = plugins/CreatureManager
 	url = https://github.com/mklauber/tw-CreatureManager.git
 	branch = master
 [submodule "plugins/DMTools/5e-Spells"]
-	path = plugins/DMTools/5e-Spells
+	path = plugins/5e-Spells
 	url = https://github.com/mklauber/tw-5eSRD-Spells.git
 	branch = master
 [submodule "plugins/DMTools/tw-npc-name-gnerator"]
-	path = plugins/DMTools/tw-npc-name-gnerator
+	path = plugins/tw-npc-name-gnerator
 	url = https://github.com/mklauber/tw-npc-name-gnerator.git
 	branch = master
 [submodule "plugins/DMTools/EncounterBuilder"]
-	path = plugins/DMTools/EncounterBuilder
+	path = plugins/EncounterBuilder
 	url = https://github.com/mklauber/tw5-encounter-builder.git

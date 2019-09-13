@@ -16,6 +16,6 @@
    			"--savetiddler","$:/UpgradeLibrary/List","recipes/library/tiddlers.json",
 			"--rendertiddler","$:/plugins/tiddlywiki/pluginlibrary/library.template.html","index.html","text/plain"],
 		"gui": ["--load","gui/",
-			"--rendertiddler","$:/core/save/all","index.html","text/plain"]
+			"--render","$:/core/save/all","index.html","text/plain"]
 	}
 }

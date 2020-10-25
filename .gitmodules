@@ -46,4 +46,4 @@
 	url = https://github.com/mklauber/tw5-encounter-builder.git
 [submodule "plugins/tiddly-dice"]
 	path = plugins/tiddly-dice
-	url = git@github.com:mklauber/tiddly-dice.git
+	url = https://github.com/mklauber/tiddly-dice.git

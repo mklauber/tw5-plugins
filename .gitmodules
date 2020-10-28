@@ -47,3 +47,6 @@
 [submodule "plugins/tiddly-dice"]
 	path = plugins/tiddly-dice
 	url = https://github.com/mklauber/tiddly-dice.git
+[submodule "plugins/in-filter-operator"]
+	path = plugins/in-filter-operator
+	url = https://github.com/mklauber/tiddly-in-filter.git

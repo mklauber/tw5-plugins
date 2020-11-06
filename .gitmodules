@@ -50,3 +50,6 @@
 [submodule "plugins/in-filter-operator"]
 	path = plugins/in-filter-operator
 	url = https://github.com/mklauber/tiddly-in-filter.git
+[submodule "plugins/tw-D-and-D-Edition"]
+	path = plugins/tw-D-and-D-Edition
+	url = https://github.com/mklauber/tw-D-and-D-Edition.git

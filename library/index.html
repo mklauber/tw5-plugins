@@ -1,0 +1,322 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="application-name" content="TiddlyWiki Plugin Library" />
+<meta name="application-version" content="v0.0.0" />
+<meta name="copyright" content="Copyright 2015 Jeremy Ruston" />
+<link id="faviconLink" rel="shortcut icon" href="favicon.ico">
+<title>Plugin Library</title>
+<script>
+var assetList = [
+    {
+        "title": "$:/plugins/D&DTools/Creatures",
+        "author": "Matt Lauber",
+        "description": "D&D 5e SRD Creatures",
+        "plugin-type": "plugin",
+        "version": "1.0.3",
+        "tags": "[[D&D]]",
+        "summary": "D&D 5e SRD Creatures",
+        "source": "https://github.com/mklauber/tw-5eSRD-Monsters",
+        "dependents": "",
+        "type": "application/json",
+        "requires-reload": "no"
+    },
+    {
+        "title": "$:/plugins/D&DTools/Spells",
+        "author": "Matt Lauber",
+        "description": "D&D 5e SRD Spells",
+        "plugin-type": "plugin",
+        "version": "1.0.2",
+        "tags": "[[D&D]]",
+        "summary": "D&D 5e SRD Spells",
+        "source": "https://github.com/mklauber/tw-5eSRD-Spells",
+        "dependents": "",
+        "type": "application/json",
+        "requires-reload": "no"
+    },
+    {
+        "title": "$:/plugins/D&DTools/CreatureManager",
+        "author": "Matt Lauber",
+        "created": "2018-12-17T14:28:48.203Z",
+        "core-version": ">=5.1.22",
+        "description": "D&D Creature Manager",
+        "list": "readme",
+        "modified": "2018-12-17T19:06:41.385Z",
+        "plugin-priority": "1",
+        "plugin-type": "plugin",
+        "version": "1.25.0",
+        "tags": "[[D&D]]",
+        "source": "https://github.com/mklauber/tw-CreatureManager",
+        "summary": "D&D 5e Creature Stat Block Templates",
+        "dependents": "",
+        "type": "application/json",
+        "readme": "The [[Creature Manager|$:/plugins/D&DTools/CreatureManager]] plugin is a tool for displaying Stat Blocks for D&D 5e creatures.\n\n<div style=\"clear:both\" />\n\n<div style=\"float:left;\">\nSelect a Monster: <$select tiddler=\"$:/temp/CreatureManager/Monster\">\n<$list filter=\"[all[tiddlers+shadows]type[Creature]]\">\n<option value=<<currentTiddler>>><$view field='title'/></option>\n</$list>\n</$select>\n</div>\n\n<div style=\"float:right;\">\n<$tiddler tiddler={{$:/temp/CreatureManager/Monster}}>\n<$transclude tiddler=\"$:/plugins/D&DTools/CreatureManager/ViewTemplate\">\n{{Kobold||$:/plugins/D&DTools/CreatureManager/ViewTemplate}}\n</$transclude>\n</$tiddler> \n</div>\n<div style=\"clear:both;\" />",
+        "requires-reload": "no"
+    },
+    {
+        "title": "$:/plugins/D&DTools/EncounterBuilder",
+        "author": "Matt Lauber",
+        "created": "2019-09-09T14:28:48.203Z",
+        "description": "D&D Encounter Builder",
+        "list": "",
+        "modified": "2019-09-10T19:06:41.385Z",
+        "plugin-priority": "1",
+        "plugin-type": "plugin",
+        "version": "1.0.8",
+        "tags": "[[D&D]]",
+        "summary": "D&D 5e Encounter Builder Tool",
+        "source": "https://github.com/mklauber/tw5-encounter-builder",
+        "dependents": "",
+        "type": "application/json",
+        "requires-reload": "no"
+    },
+    {
+        "title": "$:/plugins/mklauber/SoundPad",
+        "description": "SoundPad",
+        "author": "Matthew Lauber",
+        "version": "1.0.0",
+        "core-version": ">=5.0.1",
+        "plugin-type": "plugin",
+        "list": "",
+        "source": "https://github.com/mklauber/tw5-SoundPad",
+        "dependents": "",
+        "type": "application/json",
+        "requires-reload": "no"
+    },
+    {
+        "title": "$:/plugins/mklauber/aliases",
+        "description": "Aliases - Alias Manager",
+        "author": "Matthew Lauber",
+        "version": "5.3.3",
+        "core-version": ">=5.3.2",
+        "plugin-type": "plugin",
+        "plugin-priority": 1,
+        "list": "",
+        "source": "https://github.com/mklauber/tiddly-aliases",
+        "dependents": "",
+        "type": "application/json",
+        "requires-reload": "yes"
+    },
+    {
+        "title": "$:/plugins/mklauber/in.js",
+        "author": "Matt Lauber",
+        "description": "In Filter Operator",
+        "list": "",
+        "plugin-priority": "1",
+        "plugin-type": "plugin",
+        "version": "1.0.0",
+        "tags": "",
+        "source": "https://github.com/mklauber/tiddly-dice",
+        "summary": "Filter operator for checking if elements are in a list",
+        "dependents": "",
+        "type": "application/json",
+        "requires-reload": "yes"
+    },
+    {
+        "title": "$:/plugins/mklauber/math.js",
+        "description": "Add a calc widget that evluates expression using Math.JS",
+        "author": "Matthew Lauber",
+        "version": "1.1.2",
+        "core-version": ">=5.0.0",
+        "plugin-type": "plugin",
+        "list": "",
+        "source": "https://github.com/mklauber/tiddly-mathjs",
+        "dependents": "",
+        "type": "application/json",
+        "requires-reload": "yes"
+    },
+    {
+        "title": "$:/plugins/mklauber/substory",
+        "description": "Sane Substory Implementation",
+        "author": "Matthew Lauber",
+        "version": "2.0.2",
+        "core-version": ">=5.0.0",
+        "plugin-type": "plugin",
+        "list": "readme",
+        "dependents": "",
+        "type": "application/json",
+        "requires-reload": "yes"
+    },
+    {
+        "title": "$:/plugins/D&DTools/d20.js",
+        "author": "Matt Lauber & Tactical Tokens",
+        "description": "Dice roller plugin",
+        "list": "",
+        "plugin-priority": "1",
+        "plugin-type": "plugin",
+        "version": "1.1.0",
+        "tags": "[[D&D]]",
+        "source": "https://github.com/mklauber/tiddly-dice",
+        "summary": "Plugin for interpreting dice rolls",
+        "dependents": "",
+        "type": "application/json",
+        "requires-reload": "yes"
+    },
+    {
+        "title": "$:/plugins/mklauber/dropaction",
+        "description": "DropAction Widget",
+        "author": "Matthew Lauber",
+        "version": "1.1.2",
+        "core-version": ">=5.0.0",
+        "plugin-type": "plugin",
+        "list": "Readme",
+        "dependents": "",
+        "type": "application/json",
+        "requires-reload": "yes"
+    },
+    {
+        "title": "$:/plugins/mklauber/preferences",
+        "description": "mklauber's personal Tweaks",
+        "author": "Matthew Lauber",
+        "version": "1.1.2",
+        "core-version": ">=5.0.0",
+        "plugin-type": "plugin",
+        "list": "",
+        "dependents": "",
+        "type": "application/json",
+        "requires-reload": "no"
+    },
+    {
+        "title": "$:/plugins/mklauber/shuffle",
+        "description": "A Shuffle filter operator",
+        "author": "Matthew Lauber",
+        "version": "1.0.2",
+        "core-version": ">=5.0.0",
+        "plugin-type": "plugin",
+        "list": "readme",
+        "source": "https://github.com/mklauber/tiddly-shuffle",
+        "dependents": "",
+        "type": "application/json",
+        "readme": "|!purpose|Randomize the order of the input list|\n|!input|a selection of titles|\n|!parameter|a random string to be used to create consistent random ordering|\n|!output|The input titles, rearranged in a random order|\n\nThis plugin implements a new filter operator called Shuffle.  This operator takes the input list and randomizes the order of the list.  If no parameter is provided, the list order is random every time.\n\n!!!Example:\n```\n<$list filter=\"1 2 3 4 5 +[shuffle[]]\">\n\n</$list>\n```\n\n<$button popup=\"$:/state/shuffle/reveal1\">Run Demo</$button>\n\n<$reveal type=\"popup\" state=\"$:/state/shuffle/reveal1\">\n<div class=\"tc-drop-down\">\n<$list filter=\"1 2 3 4 5 +[shuffle[]]\">\n\n</$list>\n</div>\n</$reveal>\n\nCombining this operator with the first operator allows you to choose 1 or more titles randomly from a list.\n\n!!!Example:\n```\n<$list filter=\"1 2 3 4 5 +[shuffle[]first[2]]\">\n\n</$list>\n```\n\n<$button popup=\"$:/state/shuffle/reveal2\">Run Demo</$button>\n\n<$reveal type=\"popup\" state=\"$:/state/shuffle/reveal2\">\n<div class=\"tc-drop-down\">\n<$list filter=\"1 2 3 4 5 +[shuffle[]first[2]]\">\n\n</$list>\n</div>\n</$reveal>\n\nIf a parameter is provided the list will be ordered identically every time it is rendered.  This can be useful in conjunction a button that updates a state tiddler.  Set the parameter of this operator to reference that state tiddler, and create a button that updates that tiddler, and now the ordering of the random operators only changes when the button is pressed.\n\n!!!Example:\n```\n<$button>\n<$action-setfield $tiddler=\"$:/temp/shuffle/example\" $field=\"state\" $value=<<now \"0hh:0mm:0ss\">>/>\nChange Order\n</$button>\n\n<$list filter=\"1 2 3 4 5 +[shuffle{$:/temp/shuffle/example!!state}]\">\n\n</$list>\n```\n\n<$button>\n<$action-setfield $tiddler=\"$:/temp/shuffle/example\" $field=\"state\" $value=<<now \"0hh:0mm:0ss\">>/>\nUpdate\n</$button>\n\n<$list filter=\"1 2 3 4 5 +[shuffle{$:/temp/shuffle/example!!state}]\">\n\n</$list>\n",
+        "requires-reload": "yes"
+    },
+    {
+        "title": "$:/plugins/D&DTools/D&DEdition",
+        "author": "Matt Lauber",
+        "created": "2018-12-17T14:28:48.203Z",
+        "core-version": ">=5.1.22",
+        "description": "D&D Edition",
+        "list": "",
+        "modified": "2018-12-17T19:06:41.385Z",
+        "plugin-priority": "1",
+        "plugin-type": "plugin",
+        "version": "1.0.5",
+        "tags": "[[D&D]]",
+        "source": "https://github.com/mklauber/tw-D-and-D-Edition.git",
+        "summary": "D&D Edition",
+        "dependents": "$:/plugins/D&DTools/CreatureManager $:/plugins/D&DTools/EncounterBuilder $:/plugins/mklauber/in.js $:/plugins/D&DTools/d20.js $:/plugins/mklauber/shuffle $:/plugins/D&DTools/Creatures $:/plugins/D&DTools/Spells $:/plugins/D&DTools/NPCNameGenerator",
+        "type": "application/json",
+        "requires-reload": "no"
+    },
+    {
+        "title": "$:/plugins/D&DTools/NPCNameGenerator",
+        "author": "Matt Lauber",
+        "description": "NPC Name Generator",
+        "list": "readme [[Control Panel]]",
+        "plugin-type": "plugin",
+        "version": "1.0.4",
+        "tags": "[[D&D]]",
+        "summary": "Random Name Generator for NPCs",
+        "source": "https://github.com/mklauber/tw-npc-name-gnerator",
+        "dependents": "$:/plugins/mklauber/shuffle",
+        "type": "application/json",
+        "requires-reload": "no"
+    }
+];
+
+/*\
+title: $:/plugins/tiddlywiki/pluginlibrary/libraryserver.js
+type: application/javascript
+module-type: library
+
+A simple HTTP-over-window.postMessage implementation of a standard TiddlyWeb-compatible server. It uses real HTTP to load the individual tiddler JSON files.
+
+\*/
+(function(){
+
+/*jslint node: true, browser: true */
+/*global $tw: false */
+"use strict";
+
+// Listen for window messages
+window.addEventListener("message",function listener(event){
+	console.log("plugin library: Received message from",event.origin);
+	console.log("plugin library: Message content",event.data);
+	switch(event.data.verb) {
+		case "GET":
+			if(event.data.url === "recipes/library/tiddlers.json") {
+				// Route for recipes/library/tiddlers.json
+				event.source.postMessage({
+					verb: "GET-RESPONSE",
+					status: "200",
+					cookies: event.data.cookies,
+					url: event.data.url,
+					type: "application/json",
+					body: JSON.stringify(assetList,null,4)
+				},"*");
+			} else if(event.data.url.indexOf("recipes/library/tiddlers/") === 0) {
+				var url = "recipes/library/tiddlers/" + encodeURIComponent(removePrefix(event.data.url,"recipes/library/tiddlers/"));
+				// Route for recipes/library/tiddlers/<uri-encoded-tiddler-title>.json
+				httpGet(url,function(err,responseText) {
+					if(err) {
+						event.source.postMessage({
+							verb: "GET-RESPONSE",
+							status: "404",
+							cookies: event.data.cookies,
+							url: event.data.url,
+							type: "text/plain",
+							body: "Not found"
+						},"*");
+					} else {
+						event.source.postMessage({
+							verb: "GET-RESPONSE",
+							status: "200",
+							cookies: event.data.cookies,
+							url: event.data.url,
+							type: "application/json",
+							body: responseText
+						},"*");
+					}
+				});
+			} else {
+				event.source.postMessage({
+					verb: "GET-RESPONSE",
+					status: "404",
+					cookies: event.data.cookies,
+					url: event.data.url,
+					type: "text/plain",
+					body: "Not found"
+				},"*");
+			}
+			break;
+	}
+},false);
+
+// Helper to remove string prefixes
+function removePrefix(string,prefix) {
+	if(string.indexOf(prefix) === 0) {
+		return string.substr(prefix.length);
+	} else {
+		return string;
+	}
+}
+
+// Helper for HTTP GET
+function httpGet(url,callback) {
+	var http = new XMLHttpRequest();
+	http.open("GET",url,true);
+	http.onreadystatechange = function() {
+		if(http.readyState == 4 && http.status == 200) {
+			callback(null,http.responseText);
+		}
+	};
+	http.send();
+}
+
+})();
+
+</script>
+</head>
+<body><h1>HelloThere</h1><p>This is the TiddlyWiki plugin library. It is not intended to be opened directly in the browser.</p><p>See <a href="https://tiddlywiki.com/" target="_blank">https://tiddlywiki.com/</a> for details of how to install plugins.</p></body>
+</html>
